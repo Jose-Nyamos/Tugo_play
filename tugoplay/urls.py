@@ -33,7 +33,7 @@ urlpatterns = [
     path('view-feedback', views.view_feedback_view,name='view-feedback'),
 
     path('adminclick', views.adminclick_view),
-    path('adminlogin', LoginView.as_view(template_name='tugo/adminlogin.html'),name='adminlogin'),
+    path('adminlogin', LoginView.as_view(template_name='tugo/customer_templates/adminlogin.html'),name='adminlogin'),
     path('admin-dashboard', views.admin_dashboard_view,name='admin-dashboard'),
 
     path('view-customer', views.view_customer_view,name='view-customer'),
@@ -51,7 +51,7 @@ urlpatterns = [
 
 
     path('customersignup', views.customer_signup_view),
-    path('customerlogin', LoginView.as_view(template_name='tugo/customerlogin.html'),name='customerlogin'),
+    path('customerlogin', LoginView.as_view(template_name='tugo/customer_templates/customerlogin.html'),name='customerlogin'),
     path('customer-home', views.customer_home_view,name='customer-home'),
     path('my-order', views.my_order_view,name='my-order'),
     path('my-profile', views.my_profile_view,name='my-profile'),

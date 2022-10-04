@@ -1,9 +1,12 @@
-{% extends 'tugo/admin_base.html' %}
+{% extends 'tugo/customer_templates/customer_base.html' %}
 {% load widget_tweaks %}
 {% block content %}
 
 <head>
   <style media="screen">
+    body {
+      background-color:#ffffff;
+    }
     a:link {
       text-decoration: none;
     }
@@ -37,14 +40,12 @@
       color: #fff;
     }
 
-    .menu {
+    .menu{
       top: 50px;
     }
   </style>
 
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <br><br><br><br><br><br>
 <!------ update page for doctor by admin(sumit)  ---------->
@@ -53,7 +54,7 @@
   <div class="container register-form">
     <div class="form">
       <div class="note">
-        <p>Update Customer Details</p>
+        <p>EDIT PROFILE</p>
       </div>
       <div class="form-content">
         <div class="row">
@@ -84,7 +85,7 @@
 
           </div>
         </div>
-        <button type="submit" class="btnSubmit">Update</button>
+        <button type="submit" class="btnSubmit">Edit</button>
       </div>
     </div>
   </div>

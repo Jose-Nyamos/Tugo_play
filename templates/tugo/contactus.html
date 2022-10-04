@@ -3,7 +3,7 @@
 {% block content %}
 
   {%if request.user.is_authenticated%}
-    {% include "tugo/customer_navbar.html" %}
+    {% include "tugo/customer_templates/customer_navbar.html" %}
   {%else%}
     {% include "tugo/navbar.html" %}
   {%endif%}
